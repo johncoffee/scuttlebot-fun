@@ -9,7 +9,7 @@ const {collect, filter, drain, through, map} = pull
 
 promisify(ssbClient)().then(async sbot => {
 
-  const outfile = __filename.replace(".ts", ".json")
+  const outfile = "popular-friends.json"
   const dataDir = join(__dirname, "../data")
 
   const me = '@WrhBwCVvOWAk8hTlCAJJDNpu2oxvumb8gxyOooTKyoE=.ed25519'
